@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //window.location
+    //window.history
+    //window.document
+    //window.screen
+    //window.navigator
+
+    //첫번쨰 시간
+    //alert() , confirm(), prompt()
+    //window는 생략이 가능하다.
+        // var x = "hello world";
+        // alert(x);
+        // confirm(x);
+        // prompt(x, 0); 
+        
+        
+        //입력받는 값은 다 문자열이 된다.
+
+        var a = prompt("a의 값을 입력하세요",0);
+        var b = prompt("b의 값을 입력하세요",0);
+        
+        a = parseInt(a);
+        b = parseInt(b);
+        
+        alert(a+b);
+
+        //중요한것은 문자열이 포함되어있어도 숫자만 계산해준다.
+        //css의 px같은 값들도 포함해서 계산이 가능하다.
+
+        var c = '30px';
+        var d = '50px';
+
+        c = parseInt(c);
+        d = parseInt(d);
+        
+        alert(c+d+"px");
+
+        var answer = confirm("정말로 삭제하시겠습니까?");
+        if(answer){
+            alert("삭제되었습니다.");
+        } else {
+            alert("취소되었습니다.");
+        }
+        
+    </script>
+</body>
+</html>

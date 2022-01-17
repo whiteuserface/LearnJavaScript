@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // int add(int x, int y){
+        //     return x+y;
+        // } 
+        //이렇게 못쓴다.
+        
+        //특이하네...
+        
+        var add = new Function("x,y","return x+y;");
+        
+        //출력 사실이였따...
+
+        document.write(add(3,4));
+
+        //이게 조금 더 이해가 쉽다...
+        var minus = function(x,y){
+            return x-y;
+        }
+
+        document.write(minus(5,4));
+
+        function gop(x,y){
+            return x*y;
+        }
+
+        document.write(gop(3,6));
+        
+    </script>
+</body>
+</html>

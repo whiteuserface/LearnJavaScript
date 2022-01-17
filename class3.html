@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+            //비교연산자 중
+            //!=== ===
+            var x = 3;
+            // var y = 3; //이렇게 ===비교하면 같다고 나온다.
+            var y = new Number(3);
+            //new로 해서 새로운 박스를 만들어줘야 구분할 수 있다.
+
+            // console.log(x+y); //콘솔출력
+            // alert(x+y); //팝업출력
+            document.write(x == y); //브라우저 출력
+            document.write(x === y);
+            //!== 도 박스를 비교해서 출력해주는 것
+
+            document.write(3.5-"2"); //빼기에서는 문자가 숫자로
+            document.write("2"+1); //덧샘은 문자로 바뀐다.
+    </script>
+</body>
+</html>

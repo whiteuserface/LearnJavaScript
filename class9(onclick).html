@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printResult(){
+            var x,y;
+            x = prompt("x값을 입력하세요.",0);
+            y = prompt("y값을 입력하세요.",0);
+            x = parseInt(x);
+            y = parseInt(y);
+            alert(x+y);
+        }
+    </script>
+
+    <input type="button" value="클릭" onclick="alert('안녕하세요!')"/>
+    <span onclick="alert('hello')">스팬입니다!</span>
+
+    <input type="button" value="함수" onclick="printResult();"/>
+</body>
+</html>

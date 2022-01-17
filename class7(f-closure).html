@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function f1(){
+            var a= 1;
+
+            return function f2(){
+                return a;
+            };
+        }
+
+    //문제는 f1의 함수가 닫아야되는데
+    //f2에 의해서 참조되고 있기때문에  닫을 수 없다.
+    //이럴 경우 f1의 클로저는 f2이라고 할 수 있다.
+    //일부로 만들 수도 있고 필요에 따라 쓸 수 있다.
+    
+    var f = f1();
+    var a = f();
+    alert(a);     
+    
+    </script>
+</body>
+</html>

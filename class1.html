@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // Javascript Start
+        alert("Hello JavaScript!");
+
+
+        var lottos = [5, [2,3],"hello", 10];
+        alert(typeof lottos);
+
+        // 자바의 map이라고 생각하면 편할 듯하다.
+        var record = new Object();
+        record.kor = 30;
+        record.eng = 70;
+        record.math = 80;
+        
+
+        var record = new Object();
+        record.kor  = 30;
+        record.eng = 70;
+        record.math = 50;
+
+        //소대문자를 잘 구별해야 한다.
+        record.Kor = 20;
+        //대괄호를 이용하면 반복문도 쓸수있다.
+        a="korea";
+        alert(record.a);
+        record["korea"] = 30;
+        record["english"] = 70;
+        record["mathclass"] = 20;
+
+        // JSON사용 이유
+        // 기존 XML 방식
+        // <데이터>
+        //     <학생성적>
+        //         <국어>23</국어>
+        //         <영어></영어>
+        //         <수학>40</수학>
+        //     </학생성적>
+        //     <학생성적>
+        //         <국어>23</국어>
+        //         <영어>15</영어>
+        //         <수학>40</수학>
+        //     </학생성적>
+        //     <학생성적>
+        //         <국어>23</국어>
+        //         <영어>13</영어>
+        //         <수학>40</수학>
+        //     </학생성적>
+        // </데이터>
+
+        // XML은 좀 복잡해 보인다.
+
+        // JSON 표현
+        
+        // [
+        //     {KOR:23,ENG:0, MATH:40}
+        //     {KOR:23,ENG:15,MATH:40}
+        //     {KOR:23,ENG:13,MATH:40}
+        // ]
+
+        // 심플해 졌다.^^
+
+        // alert(record.Kor + record.math);
+        var exam = {title:"중간고사",kor:30, eng:40, math:50}; //new Object(); //이렇게 잘 쓰지 않음.
+        //다른 변환기를 쓸떄는 ""을 넣어준다
+        var exam2 ={"title":"중간고사","kor":30,"eng":40,"math":50};
+        // exam.kor = 30;
+        // exam["eng"] = 40;
+        alert(exam2.title);
+
+        alert(exam.eng); //40 출력
+        alert(exam.title);
+        alert(exam.math);
+        alert(exam.kor);
+
+        var D = "HELLO";
+        var S = 'HELLO';
+        // 더블커테이션과 싱크커테이션은 포함관계에 있을떄
+        // 다르게 표현할 수 있다.
+
+        var exam = {"kor":30, "eng":70, "math":80}; //오브젝트를 만들었음.
+        console.log(exam.kor + exam.eng);
+
+        var ar = [3,4,5,6,exam,[7,8,9]];
+
+        console.log(ar[4]);
+
+        var notice = {"id":1,"title":"hello"};
+    
+        console.log(notice.title);
+        console.log(notice.id);
+
+    </script>   
+
+</body>
+</html>

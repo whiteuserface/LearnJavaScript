@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //문자열 변환 방법에 대한 공부
+    //eval
+    // var data = '[ \
+    //                 {"data":10, "source":10}, \
+    //                 {"data":11, "source":11}, \
+    //                 {"data":12, "source":13} \
+    //             ]'
+
+    //     eval('var x = 30');
+
+    //     console.log(x);
+
+    //     eval("var ar = " + data + ";");
+    //     console.log(ar[0].data);
+    
+    //Json
+
+    var data = JSON.parse('{"id":1, "title":"aaa"}');
+
+    console.log(data.id);
+
+    var data2 = {id:2, title:"bbb"};
+
+    var json = JSON.stringify(data2);
+
+    alert(json);
+
+    
+    </script>
+</body>
+</html>

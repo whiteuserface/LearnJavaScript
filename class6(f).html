@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function add(x,y){
+
+            //arguments에 다 저장할 수 있다.
+            // alert(arguments.length); //6
+            alert(arguments[5]);
+
+            return x+y;
+        }
+        //오류가 안난다....
+        document.write(add(2,3,4,5,6,"hello"));
+
+        a = 1; //<--전역변수 window.a가 되는것임.
+
+        function minus(x,y){
+            return x-y;
+        }
+
+        document.write(a-4);
+
+        //자바스크립트에서 지역변수는 유일하게 함수이다.
+    </script>
+</body>
+</html>

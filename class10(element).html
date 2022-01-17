@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printResult(){
+            var x,y;
+            x = prompt("x값을 입력하세요",0);
+            y = prompt("y값을 입력하세요",0);
+
+            x = parseInt(x);
+            y = parseInt(y);
+
+            btnprint.value = x+y;
+            spanprint.innerText = x+y;
+            btnprint.type="text";
+        }
+    </script>
+
+    <input type="button" onclick="printResult();" id="btnprint" value="클릭"/>
+    <span id="spanprint">나는 스팬</span>
+
+    <!-- ---------------------------------------------- -->
+    <!-- 스크립트를 밑으로 옮기면 실행됨. -->
+    <!-- 여기까지 21강 -->
+    <!-- 6분 34초까지 들었음 -->
+    <script>
+        function resultPrint(){
+            var x,y;
+            x = prompt("x값을 입력하세요",0);
+            y = prompt("y값을 입력하세요",0);
+
+            x = parseInt(x);
+            y = parseInt(y);
+
+            btn.value = x+y;
+            span.innerText = x+y;
+            btn.type="text";
+        }
+        function init(){
+            btn.onclick = resultPrint;
+        }
+        window.onload = init;
+    //두가지 방식이 있음. script를 밑으로 내리거나.
+    //window.onload = init;
+  </script>
+    <input type="button" id="btn" value="클릭"/>
+    <span id="span">나는 스팬</span>
+</body>
+</html>
