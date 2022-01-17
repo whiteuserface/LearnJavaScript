@@ -1,3 +1,43 @@
+//Ex6 : 엘리먼트 노드의 속성& css 속성 변경
+window.addEventListener("load", function(){
+   var section = documnet.querySelector("#section6");
+    var titleInput = section.querySelector(".title-input");
+    var menuListDiv = section.querySelector(".menu-list");
+    var addButton = section.querySelector(".add-button");
+    var delButton = section.querySelector(".del-button");
+    
+    addButton.onclick = function(){
+        var title = titleInput.value;
+        var txtNode = document.createTextNode(title);
+        menuListDiv.appendChild(txtNode);
+    };
+
+    delButton.onclick = function(){
+
+    };
+});
+
+//Ex5 : Ex5 : 엘리먼트 노드의 속성& css 속성 변경
+window.addEventListener("load", function(){
+    var section = document.querySelector("#section5");
+   var srcInput = section.querySelector(".src-input");
+   var imgSelect = section.querySelector(".img-select");
+   var changeButton = section.querySelector(".change-button");
+   var img = section.querySelector(".img");
+    var colorInput = section.querySelector(".color-input");
+   changeButton.onclick = function(){
+       img.src = "images/"+srcInput.value;
+   
+        // img.style.border-color = ?;
+
+        // img.style["border-color"] = colorInput.value;
+        img.style.borderColor = colorInput.value;
+        console.log(img.className);
+    }
+
+    
+});
+
 //Ex4 : Ex4 : childNodes를 이용한 노드 선택
 window.addEventListener("load", function(){
     var section4 = document.querySelector("#section4");
